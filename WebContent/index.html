@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>index</title>
+	<meta name="author" content="Wu Wenhao" />
+	<link rel="stylesheet" href="mycss.css" />
+	<link rel="shortcut icon" href="shortcut.jpeg"/>
+	<script type="text/javascript" src="myjs.js" charset="UTF-8"></script>
+	
+	<!-- Date: 2014-04-03 -->
+</head>
+<body onload="showJSON();">
+<form action="" onsubmit="return check_submit();">
+    用户名：
+    <br><input id="username" onmouseover="mover();"/>
+    <br>密码：
+    <br><input type="password" id="pass" />
+    <br>确认密码：
+    <br><input type="password" id="passconfirm"/>
+    <br>请输入右侧验证码：
+    <br><input type="text" id="identinput" value="输入右侧验证码" onfocus="javascript:if(this.value=='输入右侧验证码')this.value='';" onblur="avascript:if(this.value=='')this.value='输入右侧验证码';"/>验证码：<label id="identcode" onclick="getIdentCode();"> </label>   
+    <script type="text/javascript">getIdentCode();</script>
+    <br><input type="submit" id="submit_button"/>
+</form>
+<div id="mydiv">test</div>
+<select id="select1">
+	<option value="op1">op1</option>
+</select><br/>
+<input type="button" onclick="add_to_select();" value="添加项目" /><br/>
+<input type="button" onclick="delete_select();" value="删除项目" /><br/>
+</body>
+</html>
+
